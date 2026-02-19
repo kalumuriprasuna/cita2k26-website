@@ -472,10 +472,11 @@ body {
 
     body::before {
         background-position: center center;  /* keep circle middle */
-        background-size: 150%;  /* slight zoom for better fit */
+        background-size: 140%;  /* slight zoom for better fit */
     }
 
 }
+
 
 
 
