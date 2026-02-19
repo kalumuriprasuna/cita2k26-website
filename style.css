@@ -469,21 +469,13 @@ body {
 }
 @media (max-width: 768px) {
 
-    body {
-        background-position: center top;   /* show buildings */
-        background-size: 150%;             /* adjust zoom */
-        background-attachment: scroll;     /* remove fixed bug */
-    }
-
-    .main-title {
-        font-size: 3rem;
-    }
-
-    .dept-line {
-        font-size: 1rem;
+    body::before {
+        background-position: center top;
+        background-size: 150%;
     }
 
 }
+
 
 
 
