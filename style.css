@@ -2,18 +2,18 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #000;   /* fallback color */
+    background: url('citalogo.jpeg') no-repeat center center fixed;
+    background-size: cover;
     color: white;
 }
 
-.hero::before {
+body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.6);
-    z-index: 0;
+    z-index: -1;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -26,16 +26,7 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    background: url('citalogo.jpeg') no-repeat center center;
-    background-size: cover;
-    background-position: center;
 }
-.hero > * {
-    position: relative;
-    z-index: 1;
-}
-
 
 /* ================= BRICK TITLE ================= */
 .main-title {
@@ -464,12 +455,11 @@ body {
 /* ===== Mobile Background Fix ===== */
 
 @media (max-width: 768px) {
-
-    .hero {
-        background-position: top center;
+    body {
+        background-attachment: scroll;  /* Remove fixed on mobile */
+        background-position: center top;
         background-size: cover;
     }
-
 }
 
 
