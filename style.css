@@ -2,8 +2,9 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: url('citalogo.jpeg') no-repeat center center fixed;
+    background: url('citalogo.jpeg') no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
     color: white;
 }
 
@@ -452,4 +453,13 @@ body {
     transform: translateX(-50%) scale(1.2);
     color: #ff4f81;
 }
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;  /* Remove fixed on mobile */
+        background-position: center top;
+        background-size: cover;
+    }
+}
+
+
 
