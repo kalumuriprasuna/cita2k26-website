@@ -438,7 +438,6 @@ body {
 /* ===== Instagram Bottom Center Icon ===== */
 
 .instagram-icon {
-    
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
@@ -452,14 +451,4 @@ body {
     transform: translateX(-50%) scale(1.2);
     color: #ff4f81;
 }
-/* ===== Mobile Background Fix ===== */
-
-@media (max-width: 768px) {
-    body {
-        background-attachment: scroll;  /* Remove fixed on mobile */
-        background-position: center top;
-        background-size: cover;
-    }
-}
-
 
