@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background: url('citalogo.jpeg') no-repeat center center fixed;
-    background-size: cover;
+    background-size: 120%;
     color: white;
 }
 
@@ -451,4 +451,22 @@ body {
     transform: translateX(-50%) scale(1.2);
     color: #ff4f81;
 }
+@media (max-width: 768px) {
+
+    body {
+        background-position: center top;   /* show buildings */
+        background-size: 150%;             /* adjust zoom */
+        background-attachment: scroll;     /* remove fixed bug */
+    }
+
+    .main-title {
+        font-size: 3rem;
+    }
+
+    .dept-line {
+        font-size: 1rem;
+    }
+
+}
+
 
